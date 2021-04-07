@@ -1,7 +1,7 @@
 parameters:
     level: 3
     bootstrapFiles:
-      - ../.Build/vendor/autoload.php
+      - /github/workspace/.Build/vendor/autoload.php
     scanDirectories:
-      - ../Classes
-      - ../Tests
+      - /github/workspace/Classes
+      - /github/workspace/Tests

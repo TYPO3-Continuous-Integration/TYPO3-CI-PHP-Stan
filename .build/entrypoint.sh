@@ -18,6 +18,17 @@ Header() {
   echo "---------------------------------------------"
 }
 
+### Function InstallDependencies #############################################################
+InstallDependencies() {
+  ##########
+  # Prints #
+  ##########
+  echo "---------------------------------------------"
+  echo "-- Installing dependencies... ---"
+  echo "---------------------------------------------"
+  sh -c "composer install --no-progress"
+}
+
 ### Function Check #############################################################
 Check() {
   ##########
@@ -49,6 +60,11 @@ Footer() {
 # Header #
 ##########
 Header
+
+##########
+# InstallDependencies #
+##########
+InstallDependencies
 
 ##########
 # Check #
