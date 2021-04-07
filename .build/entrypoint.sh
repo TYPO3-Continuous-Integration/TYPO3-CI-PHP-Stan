@@ -26,7 +26,7 @@ Check() {
   echo "---------------------------------------------"
   echo "-- Running check... ---"
   echo "---------------------------------------------"
-  sh -c "phpstan -c $config_file $input_paths"
+  sh -c "phpstan analyse $input_paths -c $config_file"
 }
 
 #### Function Footer ###########################################################
