@@ -1,0 +1,21 @@
+##
+name: 'TYPO3 CI PHPStan'
+description: 'GitHub Action that checks your PHP code.'
+branding:
+  icon: check
+  color: orange
+inputs:
+  files:
+    description: 'Files you want to check.'
+    required: false
+    default: 'Classes'
+  config_file:
+    description: 'Path to custom configuration'
+    required: false
+    default: '/.configuration/phpstan.neon'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.files }}
+    - ${{ inputs.config_file }}
