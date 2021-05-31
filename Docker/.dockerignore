@@ -1,6 +1,6 @@
 # ignore all files by default
 *
 # include required files with an exception
-!.build/entrypoint.sh
-!.configuration/phpstan.neon
-!README.md
+!Build/entrypoint.sh
+!Configuration/phpstan.neon
+!../README.md
